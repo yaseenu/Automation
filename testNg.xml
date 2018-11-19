@@ -1,0 +1,8 @@
+<suite name ="Sample tests">
+    <test name = "hello">
+
+        <classes>
+            <class name = "com.tests.Config" />
+        </classes>
+    </test>
+</suite>
