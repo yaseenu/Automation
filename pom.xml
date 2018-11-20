@@ -13,7 +13,8 @@
         <selenium.version>3.4.0</selenium.version>
         <appium.version>4.1.2</appium.version>
         <dependency.locations.enabled>false</dependency.locations.enabled>
-        <maven.build.timestamp.format>dd/MM/yyyy-HH:mm</maven.build.timestamp.format>
+        <!--<timeStamp>maven.build.timeStamp</timeStamp>-->
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     </properties>
 
     <dependencies>
@@ -22,12 +23,6 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>${appium.version}</version>
         </dependency>
 
         <dependency>
@@ -64,8 +59,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 
@@ -80,7 +75,7 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-            
+
         </plugins>
     </build>
 
@@ -100,5 +95,6 @@
 
         </plugins>
     </reporting>
+
 
 </project>
